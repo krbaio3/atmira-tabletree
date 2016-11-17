@@ -1,0 +1,24 @@
+.content-table-tree{background-color: #fff;; margin-bottom: 7px;}
+.tree-grid {overflow-y : scroll;width: 100%;}
+.tree-grid th {height: 28px;padding: 0px 6px !important;vertical-align: middle !important;background-color: #e7e5e5; border: 1px solid #dbdbdb!important;border-bottom: 2px solid #dcd8d7; color: #35261A;}
+.tree-grid tr {cursor:default;display:table-row!important;opacity:1!important;}
+.tree-grid tr:not(.level-1) td:first-child{padding-left: 19px;}
+.tree-grid tr:nth-child(even) {background-color: #f6f6f6;}
+.tree-grid td {border: 1px solid #eee!important;padding: 0px 6px !important;height: 26px; vertical-align: middle !important;}
+.tree-grid td.scroll {width:16px; padding-left: 0px;}
+.tree-grid td a{color: #333!important;width: 11px;height:11px;position:relative;margin-right: 5px;top: 6px;display: inline-block;border-radius: 2px;border: 1px solid #878787;cursor: pointer;}
+.tree-grid td a:hover{background: #94887c;border: 1px solid #82776b;}
+.tree-grid td a:hover i{color: #fff;}
+.tree-grid td span:after{border-top: 1px dotted #8f8f8f;content: '';left:5px;position: absolute;width: 13px;top:7px;}
+.tree-grid td a i{text-align: center;width:100%;position: relative;font-size: 5px;padding: 0!important;z-index: 2; display: inline-table;}
+.tree-grid td a i.iconPlus{top: -8px;}
+.tree-grid td a i.iconMinus{top: -7px;}
+.tree-grid td a i.iconPlus:before{font-size:8px!important;content:'+'}
+.tree-grid td a i.iconMinus:before{font-size:12px!important;content:'-'}
+.tree-grid tr.level-2 td a{display: none;}
+.tree-grid tr.level-2 td span{padding-left: 22px; position: relative;}
+.tree-grid tr.level-2 td span:before{border-left: 1px dotted #8f8f8f;content:'';position: absolute;width: 13px;height:22px;top:-16px;left: 5px;}
+.tree-grid tr.level-1 td span:after{display:none;}
+.tree-grid i.no-icon {display: none;}
+.tree-grid .tree-icon {cursor: pointer;}
+.tree-grid i.indented {padding: 2px;}

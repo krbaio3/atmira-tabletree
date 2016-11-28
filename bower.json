@@ -7,8 +7,8 @@
     ],
     "description": "Atmira table tree component",
     "main": [
-        "dist/tabletree.scss",
-        "dist/tabletree.js"
+        "./dist/tabletree.scss",
+        "./dist/tabletree.js"
 
     ],
     "keywords": [

@@ -1,40 +1,26 @@
 {
-    "name": "atmira-ui-tabletree",
-    "version": "1.0.1",
-    "description": "AngularJS directive for a table tree",
-    "main": [
-        "dist/tabletree.scss",
-        "dist/tabletree.js"
+  "name": "atmira-tabletree",
+  "homepage": "https://github.com/krbaio3/atmira-tabletree",
+  "authors": [
+    "Atmira FrontEnd VillaFranca"
+  ],
+  "description": "Atmira table tree component",
+  "main": [
+      "dist/tabletree.scss",
+      "dist/tabletree.js"
 
-    ],
-    "license": "MIT",
-    "authors": [
-        "Atmira front end Vilafranca"
-    ],
-    "homepage": "https://github.com/krbaio3/atmira-tabletree",
-    "keywords": [
-      "atmira",
-      "table-tree"
-    ],
-    "ignore": [
-        "temp",
-        "test",
-        ".gitignore",
-        "bower.json",
-        "package.json",
-        "README.md",
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "tests"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "Pendiente de definir"
-    },
-    "_release": "1.0.0",
-    "_source": "Pendiente",
-    "_target": "^1.0.0",
-
-    "private": true
+  ],
+  "keywords": [
+    "Atmira",
+    "table-tree"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }

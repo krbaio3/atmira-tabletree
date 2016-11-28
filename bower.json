@@ -1,26 +1,27 @@
 {
-  "name": "atmira-tabletree",
-  "homepage": "https://github.com/krbaio3/atmira-tabletree",
-  "authors": [
-    "Atmira FrontEnd VillaFranca"
-  ],
-  "description": "Atmira table tree component",
-  "main": [
-      "dist/tabletree.scss",
-      "dist/tabletree.js"
+    "name": "atmira-tabletree",
+    "version": "1.0.2",
+    "homepage": "https://github.com/krbaio3/atmira-tabletree",
+    "authors": [
+        "Atmira FrontEnd VillaFranca"
+    ],
+    "description": "Atmira table tree component",
+    "main": [
+        "dist/tabletree.scss",
+        "dist/tabletree.js"
 
-  ],
-  "keywords": [
-    "Atmira",
-    "table-tree"
-  ],
-  "license": "MIT",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+    ],
+    "keywords": [
+        "Atmira",
+        "table-tree"
+    ],
+    "license": "MIT",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
 }

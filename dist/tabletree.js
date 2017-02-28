@@ -5,7 +5,7 @@
     '$templateCache',
     function ($templateCache) {
       $templateCache.put('template/tabletree.html',
-      " <table class=\"tree-grid\" id=\"tableTreeAtmira\">\n" +
+      " <table class=\"tree-grid\">\n" +
       "   <thead>\n" +
       "     <tr>\n" +
       "       <th><a ng-if=\"expandingProperty.sortable\" ng-click=\"sortBy(expandingProperty)\">{{expandingProperty.displayName || expandingProperty.field || expandingProperty}}</a><span ng-if=\"!expandingProperty.sortable\">{{expandingProperty.displayName || expandingProperty.field || expandingProperty}}</span><i ng-if=\"expandingProperty.sorted\" class=\"{{expandingProperty.sortingIcon}} pull-right\"></i></th>\n" +

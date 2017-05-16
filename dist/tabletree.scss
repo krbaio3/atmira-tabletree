@@ -17,20 +17,18 @@
   }
   tr {
     cursor: default;
-    display: table-row !important;
+    display: block !important;
     opacity: 1 !important;
     font-size: 12px;
     &:not(.level-1) td:first-child {
       padding-left: 19px;
-    }
-    &:nth-child(even) {
-      background-color: #f6f6f6;
-    }
+    }    
   }
+  
   td {
     border: 1px solid #eee !important;
     padding: 0px 6px !important;
-    height: 26px;
+    height: 22px;
     vertical-align: middle !important;
     &.scroll {
       width: 16px;
@@ -42,26 +40,16 @@
       height: 11px;
       position: relative;
       margin-right: 5px;
-      top: 6px;
+      top: 3px;
       display: inline-block;
       border-radius: 2px;
-      border: 1px solid #878787;
+      //border: 1px solid #878787;
       cursor: pointer;
-      &:hover {
-        background: #94887c;
-        border: 1px solid #82776b;
-        i {
-          color: #fff;
-        }
-      }
     }
-    span:after {
-      border-top: 1px dotted #8f8f8f;
-      content: '';
-      left: 5px;
-      position: absolute;
-      width: 13px;
-      top: 7px;
+    a:hover{
+       i.iconPlus:before,  i.iconMinus:before {
+         background:grey;
+       }
     }
     a i {
       text-align: center;
@@ -69,21 +57,44 @@
       position: relative;
       font-size: 5px;
       padding: 0 !important;
-      z-index: 2;
+      z-index: 0;
       display: inline-table;
+      
       &.iconPlus {
         top: -8px;
       }
       &.iconMinus {
-        top: -7px;
+        top: -8px;
       }
       &.iconPlus:before {
-        font-size: 8px !important;
-        content: '+';
+           font-size: 12px !important;
+          content: ' ';
+          background: rgba(229,229,229,1);
+          background: -moz-linear-gradient(top, rgba(229,229,229,1) 0%, rgba(237,237,237,1) 0%, rgba(222,222,222,1) 26%, rgba(222,222,222,1) 100%);
+          background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(229,229,229,1)), color-stop(0%, rgba(237,237,237,1)), color-stop(26%, rgba(222,222,222,1)), color-stop(100%, rgba(222,222,222,1)));
+          background: -webkit-linear-gradient(top, rgba(229,229,229,1) 0%, rgba(237,237,237,1) 0%, rgba(222,222,222,1) 26%, rgba(222,222,222,1) 100%);
+          height: 11px;
+          width: 11px;
+          display: block;
+          top: -5px;
+          position: absolute;
+          border-radius: 2px;
+          border: 1.8px solid rgba(169, 169, 169, 0.69);
       }
       &.iconMinus:before {
-        font-size: 12px !important;
-        content: '-';
+          font-size: 12px !important;
+          content: ' ';
+          background: rgba(229,229,229,1);
+          background: -moz-linear-gradient(top, rgba(229,229,229,1) 0%, rgba(237,237,237,1) 0%, rgba(222,222,222,1) 26%, rgba(222,222,222,1) 100%);
+          background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(229,229,229,1)), color-stop(0%, rgba(237,237,237,1)), color-stop(26%, rgba(222,222,222,1)), color-stop(100%, rgba(222,222,222,1)));
+          background: -webkit-linear-gradient(top, rgba(229,229,229,1) 0%, rgba(237,237,237,1) 0%, rgba(222,222,222,1) 26%, rgba(222,222,222,1) 100%);
+          height: 11px;
+          width: 11px;
+          display: block;
+          top: -5px;
+          position: absolute;
+          border-radius: 2px;
+          border: 1.8px solid rgba(169, 169, 169, 0.69);
       }
     }
   }
@@ -95,15 +106,6 @@
       span {
         padding-left: 22px;
         position: relative;
-        &:before {
-          border-left: 1px dotted #8f8f8f;
-          content: '';
-          position: absolute;
-          width: 13px;
-          height: 22px;
-          top: -16px;
-          left: 5px;
-        }
       }
     }
     &.level-1 td span:after {
@@ -119,4 +121,10 @@
   i.indented {
     padding: 2px;
   }
+  .father-td{
+      background: #F6F6F6 !important;
+  }
+  .children-td{
+    background: #F6F6F6 !important;
+  }  
 }

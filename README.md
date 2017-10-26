@@ -1,35 +1,34 @@
 ﻿# README #
 
-## Componente tabla-árbol ##
+## Componente tabla-árbol (tabletree) ##
 
 * [Introducción](#introduccion)
 * [Versión](#version)
-* [Stack Tecnológico](#stack)
 * [¿Cómo me lo puedo instalar?](#install)
 
 <a name="introduccion"></a>
-#### Introducción: ####
+### Introducción: 
 
 Componente tabla árbol simple para proyectos en AngularJS. 
 
 
 <a name="version"></a>
-
+### Versión 
 Versión 3.05: Actualiza el README.md y la versión en el bower.json
 
 <a id="install"></a>
-### ¿Cómo me lo puedo installar? ###
+### __¿Cómo me lo puedo installar?__
 
-* [Descarga](#download)
-* [Uso](#uso)
+* [Instalación](#download)
+* [¿Cómo lo Uso?](#uso)
 
 <a id="download"></a>
-#### Descarga e instalación:
+### Descarga e instalación:
 
 `bower install -S https://github.com/krbaio3/atmira-tabletree.git`
 
 <a id="uso"></a>
-#### Uso:
+#### __¿Cómo lo Uso?:__
 
 Inyectar la dependencia en el módulo AngularJS:
 

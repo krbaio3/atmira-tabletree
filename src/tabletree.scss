@@ -1,0 +1,130 @@
+.content-table-tree {
+  background-color: #fff;
+  margin-bottom: 7px;
+}
+
+.tree-grid {
+  overflow-y: scroll;
+  width: 100%;
+  th {
+    height: 28px;
+    padding: 0px 6px !important;
+    vertical-align: middle !important;
+    background-color: #e7e5e5;
+    border: 1px solid #dbdbdb !important;
+    border-bottom: 2px solid #dcd8d7;
+    color: #35261A;
+  }
+  tr {
+    cursor: default;
+    display: block !important;
+    opacity: 1 !important;
+    font-size: 12px;
+    &:not(.level-1) td:first-child {
+      padding-left: 19px;
+    }    
+  }
+  
+  td {
+    border: 1px solid #eee !important;
+    padding: 0px 6px !important;
+    height: 22px;
+    vertical-align: middle !important;
+    &.scroll {
+      width: 16px;
+      padding-left: 0px;
+    }
+    a {
+      color: #333 !important;
+      width: 11px;
+      height: 11px;
+      position: relative;
+      margin-right: 5px;
+      top: 3px;
+      display: inline-block;
+      border-radius: 2px;
+      //border: 1px solid #878787;
+      cursor: pointer;
+    }
+    a:hover{
+       i.iconPlus:before,  i.iconMinus:before {
+         background:grey;
+       }
+    }
+    a i {
+      text-align: center;
+      width: 100%;
+      position: relative;
+      font-size: 5px;
+      padding: 0 !important;
+      z-index: 0;
+      display: inline-table;
+      
+      &.iconPlus {
+        top: -8px;
+      }
+      &.iconMinus {
+        top: -8px;
+      }
+      &.iconPlus:before {
+           font-size: 12px !important;
+          content: ' ';
+          background: rgba(229,229,229,1);
+          background: -moz-linear-gradient(top, rgba(229,229,229,1) 0%, rgba(237,237,237,1) 0%, rgba(222,222,222,1) 26%, rgba(222,222,222,1) 100%);
+          background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(229,229,229,1)), color-stop(0%, rgba(237,237,237,1)), color-stop(26%, rgba(222,222,222,1)), color-stop(100%, rgba(222,222,222,1)));
+          background: -webkit-linear-gradient(top, rgba(229,229,229,1) 0%, rgba(237,237,237,1) 0%, rgba(222,222,222,1) 26%, rgba(222,222,222,1) 100%);
+          height: 11px;
+          width: 11px;
+          display: block;
+          top: -5px;
+          position: absolute;
+          border-radius: 2px;
+          border: 1.2px solid rgba(169, 169, 169, 0.69);
+      }
+      &.iconMinus:before {
+          font-size: 12px !important;
+          content: ' ';
+          background: rgba(229,229,229,1);
+          background: -moz-linear-gradient(top, rgba(229,229,229,1) 0%, rgba(237,237,237,1) 0%, rgba(222,222,222,1) 26%, rgba(222,222,222,1) 100%);
+          background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(229,229,229,1)), color-stop(0%, rgba(237,237,237,1)), color-stop(26%, rgba(222,222,222,1)), color-stop(100%, rgba(222,222,222,1)));
+          background: -webkit-linear-gradient(top, rgba(229,229,229,1) 0%, rgba(237,237,237,1) 0%, rgba(222,222,222,1) 26%, rgba(222,222,222,1) 100%);
+          height: 11px;
+          width: 11px;
+          display: block;
+          top: -5px;
+          position: absolute;
+          border-radius: 2px;
+          border: 1.2px solid rgba(169, 169, 169, 0.69);
+      }
+    }
+  }
+  tr {
+    &.level-2 td {
+      a {
+        display: none;
+      }
+      span {
+        padding-left: 22px;
+        position: relative;
+      }
+    }
+    &.level-1 td span:after {
+      display: none;
+    }
+  }
+  i.no-icon {
+    display: none;
+  }
+  .tree-icon {
+    cursor: pointer;
+  }
+  i.indented {
+    padding: 2px;
+  }
+  .father-td{
+      background: #F6F6F6 !important;
+  }
+  .children-td{
+    background: #F6F6F6 !important;
+  }  
+}

@@ -39,7 +39,12 @@ Inyectar la dependencia en el módulo AngularJS:
 En la vista (html) donde se vaya a usar aplicar la directiva ``atmira-ui-tabletree``:
 
 ```html
-  <atmira-ui-tabletree tree-data="nombreControlador.tree_data"></atmira-ui-tabletree>
+    <atmira-ui-tabletree tree-data="nombreControlador.tree_data"></atmira-ui-tabletree>
+    <atmira-ui-tabletree tree-data="nombreControlador.arrayAmostrar" 
+                         col-defs="nombreControlador.dealFundsDesTree_defs" 
+                         expand-on="nombreControlador.dealFundsDesTree_expand" 
+                         template-url="app/components/newDeal.module/modal.component/runDeal/tableTreeTemplate.html">
+    </atmira-ui-tabletree>
 ```
 Inyectar el JS y el CSS en el index.html del proyecto:
 
